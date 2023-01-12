@@ -1,8 +1,19 @@
+import {
+  Container,
+  TikiLogo,
+} from "./styles/style";
+
+import Event from "./components/InformationEvent/event";
+import LogoTiki from "./assets/SVG/logo-tiki.svg";
+
 
 function App() {
   return (
     <>
-        <h1>Hello world, tiki!</h1>
+      <Container>
+        <TikiLogo src={LogoTiki} />
+        <Event/>
+      </Container>
     </>
   );
 }
