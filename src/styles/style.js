@@ -9,7 +9,7 @@ export const Container = styled.div`
    align-items: center;
 `
 export const TikiLogo = styled.img`
-    margin-top: 112px;
+    margin: 112px 0 112px 0;
     width: 400px;
     height: 123.79px;
 `
