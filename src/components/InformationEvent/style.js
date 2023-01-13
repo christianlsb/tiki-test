@@ -34,7 +34,8 @@ export const ContainerMainEvent = styled.div`
   display: flex;
   width: 900px;
   height: 471px;
-  background-color: red;
+  background: ${(props) => `url(${props.background})`};
+  background-size: cover;
   border-radius: 40px;
 `;
 
@@ -69,14 +70,16 @@ export const ContainerCard = styled.div`
 
 export const Card = styled.div`
   display: flex;
+  align-items: center;
+  justify-content:center;
   width: 200px;
   height: 104.67px;
-  background: ${(props) => `url(${props.background})`};
-  background-size: cover;
   flex-direction: column;
   width: 200px;
   height: 104.67px;
   background-color: blue;
+  background: #1E062E;
+  box-shadow: -10px 20px 25px rgba(143, 13, 255, 0.160784);
   border-radius: 20px;
   margin-left: 15px;
   cursor: pointer;
@@ -84,9 +87,9 @@ export const Card = styled.div`
   &:hover{
     -webkit-transform: scale(1.5);
     transform: scale(1.1);
-    
   }
-  
+  background: ${(props) => `url(${props.background})`};
+  background-size: cover;
 `;
 
 export const DateCard = styled.text`
@@ -95,3 +98,9 @@ export const DateCard = styled.text`
   font-size: 18px;
   margin-top: 10px;
 `;
+
+
+export const PadLock = styled.img`
+  width: 20px;
+  height: 20px;
+`
