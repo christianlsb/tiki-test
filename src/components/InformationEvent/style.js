@@ -36,7 +36,6 @@ export const ContainerMainEvent = styled.div`
   height: 471px;
   background-color: red;
   border-radius: 40px;
-
 `;
 
 export const CheckOut = styled.p`
@@ -47,11 +46,52 @@ export const CheckOut = styled.p`
 `;
 
 export const ContainerCarousel = styled.div`
-    display: flex;
-    background-color: gray;
-    width: 875px;
-    height: 200px;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  width: 875px;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  .rec.rec-arrow {
+    box-shadow: 3px 5px #FC2BEE;
+    background-color: var(--white-deffault);
+    opacity: 100%;
+}
 `;
 
+export const ContainerCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Card = styled.div`
+  display: flex;
+  width: 200px;
+  height: 104.67px;
+  background: ${(props) => `url(${props.background})`};
+  background-size: cover;
+  flex-direction: column;
+  width: 200px;
+  height: 104.67px;
+  background-color: blue;
+  border-radius: 20px;
+  margin-left: 15px;
+  cursor: pointer;
+  transition: all 0.5s;
+  &:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.1);
+    
+  }
+  
+`;
+
+export const DateCard = styled.text`
+  color: var(--white-deffault);
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 10px;
+`;
