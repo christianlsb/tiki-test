@@ -8,11 +8,5 @@ export default createGlobalStyle`
         font-family: 'Montserrat', sans-serif;
     }
 
-    :root{
-        --background-color: #26093a;
-        --primary-color: #280031;
-        --second-color: #FCBBEE;
-        --third-color: #8F0DFF;
-        --white-deffault: #FFFFFF
-    }
 `
+

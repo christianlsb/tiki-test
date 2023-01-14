@@ -1,18 +1,19 @@
 import {
   Container,
-  TikiLogo,
-} from "./styles/style";
+} from "./styles/home";
 
-import Event from "./components/InformationEvent/event";
-import LogoTiki from "./assets/SVG/logo-tiki.svg";
+import {InformationEvent} from "./components/InformationEvent";
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
 
 
 function App() {
   return (
     <>
       <Container>
-        <TikiLogo src={LogoTiki} />
-        <Event/>
+        <Header/>
+        <InformationEvent/>
+        <Footer/>
       </Container>
     </>
   );
