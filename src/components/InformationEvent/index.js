@@ -59,7 +59,7 @@ export function InformationEvent() {
               19 DE MARÇO
             </CardEvent>
           </Carousel>
-        </S.WrapperCards>
+        </S.WrapperCards> 
       </S.Container>
     </>
   );

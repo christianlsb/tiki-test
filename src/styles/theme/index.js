@@ -10,10 +10,12 @@ export const themes = {
   },
 
   fontWeight: {
+    normal: 400,
     bold: 700,
   },
 
   fontSize: {
+    xs: "0.75rem",
     lg: "1.125rem",
     "4xl": "2.25rem",
   },
