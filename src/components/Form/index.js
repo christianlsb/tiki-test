@@ -2,18 +2,18 @@ import * as S from "./styles";
 import { Input } from "./Input/styles";
 import { InputRadio } from "./InputRadio";
 import { useState } from "react";
-import * as yup from 'yup';
+import * as yup from "yup"; 
 
 export function Form() {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     setIsSubmitting(true);
 
     setTimeout(() => {
-        setIsSubmitting(false);
-    }, 3000); 
+      setIsSubmitting(false);
+    }, 3000);
   };
 
   const schema = yup.object().shape({
@@ -36,7 +36,9 @@ export function Form() {
         {isSubmitting ? (
           <S.Button>Loading...</S.Button>
         ) : (
-          <S.Button type onClick={handleSubmit}>Teste</S.Button>
+          <S.Button type="submit" onClick={handleSubmit}>
+            Enviar
+          </S.Button>
         )}
       </S.ContainerForm>
     </>
