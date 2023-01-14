@@ -3,9 +3,9 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import { useState } from "react";
 import { CardEvent } from "../CardEvent";
+import { CrossYellow } from "../CrossYellow";
 
 import Carousel from "react-elastic-carousel";
-import CrossYellowImg from "../../assets/svg/icon-yellow.svg";
 import SpoilersImg from "../../assets/svg/tittle1.svg";
 import ArrowDownImg from "../../assets/svg/arrow down.svg";
 import EventImg from "../../assets/image/imagem.jpg";
@@ -27,7 +27,7 @@ export function InformationEvent() {
     <>
       <S.Container>
         <S.Title>CUIDADO, AO ROLAR PODE CONTER...</S.Title>
-        <LazyLoadImage src={CrossYellowImg} alt="cross-yellow" />
+        <CrossYellow/>
         <LazyLoadImage src={SpoilersImg} alt="spoiler" />
         <LazyLoadImage src={ArrowDownImg} alt="arrow-down" />
         <S.Text>VOCÊ JÁ ESTAVA SABENDO?</S.Text>

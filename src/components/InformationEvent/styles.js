@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import {themes} from "../../styles/theme"
-
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export const Container = styled.div`
@@ -19,7 +18,6 @@ export const Title = styled.h2`
   font-weight: ${themes.fontWeight.bold};
   color: ${themes.colors.background};
 `;
-
 
 export const Text = styled.p`
   font-weight: ${themes.fontWeight.bold};
@@ -56,4 +54,3 @@ export const WrapperCards = styled.div`
     opacity: 100%;
   }
 `;
-
