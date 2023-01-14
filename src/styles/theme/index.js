@@ -6,6 +6,7 @@ export const themes = {
     purple_900: "#1e062e",
     pink_100: "#FCBBEE",
     pink_500: "#fc2bee",
+    red_900: "#63171B",
     white: "#FFFFFF",
   },
 

@@ -69,6 +69,8 @@ export const Button = styled.button`
 `;
 
 export const ErrorMenssage = styled.p`
-  color: red;
+  color: ${themes.colors.red_900};
+  font-size: ${themes.fontSize.lg};
+  font-weight: ${themes.fontWeight.bold};
   margin: 5px 0 15px 0;
 `
