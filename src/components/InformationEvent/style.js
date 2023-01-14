@@ -32,12 +32,19 @@ export const YouKnow = styled.p`
 
 export const ContainerMainEvent = styled.div`
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 900px;
   height: 471px;
   background: ${(props) => `url(${props.background})`};
   background-size: cover;
   border-radius: 40px;
 `;
+
+export const ImgEvent = styled.img`
+  width: 900px;
+  height: 471px;
+`
 
 export const CheckOut = styled.p`
   font-weight: 700;
@@ -92,7 +99,7 @@ export const Card = styled.div`
   background-size: cover;
 `;
 
-export const DateCard = styled.text`
+export const DateCard = styled.p`
   color: var(--white-deffault);
   font-weight: 700;
   font-size: 18px;
