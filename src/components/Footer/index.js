@@ -4,7 +4,7 @@ export function Footer() {
   return (
     <>
       <S.MainFooter>
-        <S.TitleFooter>TEXTO LEGAL</S.TitleFooter>;
+        <S.TitleFooter>TEXTO LEGAL</S.TitleFooter>
         <S.TextFooter>
           Nunc interdum magna id ornare gravida. Integer pretium massa in lorem
           aliquam, dictum eleifend mauris faucibus. Suspendisse sed orci

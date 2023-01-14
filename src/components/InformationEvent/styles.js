@@ -10,6 +10,8 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     background-color: ${themes.colors.background};
+    margin-bottom: 69px;
+    gap: 45px
 `;
 
 export const Title = styled.h2`
@@ -17,6 +19,8 @@ export const Title = styled.h2`
   -webkit-text-stroke: 1px ${themes.colors.white};
   font-weight: ${themes.fontWeight.bold};
   color: ${themes.colors.background};
+  margin-top: 89px;
+  margin-bottom: 30px;
 `;
 
 export const Text = styled.p`
