@@ -2,6 +2,7 @@ import * as S from "./styles";
 import { Input } from "./Input/styles";
 import { InputRadio } from "./InputRadio";
 import { useState } from "react";
+import * as yup from 'yup';
 
 export function Form() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -14,6 +15,11 @@ export function Form() {
         setIsSubmitting(false);
     }, 3000); 
   };
+
+  const schema = yup.object().shape({
+    name: yup.string().required(),
+    email: yup.string().email(),
+  });
 
   return (
     <>
