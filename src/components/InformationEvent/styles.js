@@ -13,9 +13,9 @@ export const Container = styled.div`
     margin-bottom: 69px;
     gap: 45px;
 
-    @media (max-width: 1088px) {
-        width: 100%;
-    }
+    @media  (max-width: 1096px) { 
+      width: 80%;
+  }
 
 `;
 
@@ -26,6 +26,9 @@ export const Title = styled.h2`
   color: ${themes.colors.background};
   margin-top: 89px;
   margin-bottom: 30px;
+  @media  (max-width: 1096px) { 
+      width: 70%;
+  }
 `;
 
 export const Text = styled.p`
@@ -44,11 +47,18 @@ export const MainEvent = styled.main`
   background: ${(props) => `url(${props.background})`};
   background-size: cover;
   border-radius: 40px;
+  @media  (max-width: 1096px) { 
+      width: 70%;
+      height: 30%
+  }
 `;
 
 export const ImgEvent = styled(LazyLoadImage)`
   width: 900px;
   height: 471px;
+  @media  (max-width: 1096px) { 
+      width: 100%;
+  }
 `;
 
 export const WrapperCards = styled.div`
@@ -61,5 +71,9 @@ export const WrapperCards = styled.div`
     box-shadow: 3px 5px ${themes.colors.pink_500};
     background-color: ${themes.colors.white};
     opacity: 100%;
+  }
+
+  @media  (max-width: 1096px) { 
+      width: 100%;
   }
 `;

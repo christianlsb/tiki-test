@@ -20,4 +20,8 @@ export const TextFooter = styled.p`
   font-weight: ${themes.fontWeight.normal};
   font-size: ${themes.fontSize.xs};
   text-align: center;
+
+  @media  (max-width: 1096px) { 
+      width: 100%;
+  }
 `;
