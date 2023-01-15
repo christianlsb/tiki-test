@@ -11,7 +11,12 @@ export const Container = styled.div`
     align-items: center;
     background-color: ${themes.colors.background};
     margin-bottom: 69px;
-    gap: 45px
+    gap: 45px;
+
+    @media (max-width: 1088px) {
+        width: 100%;
+    }
+
 `;
 
 export const Title = styled.h2`
