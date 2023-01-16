@@ -19,5 +19,9 @@ export const Input = styled.input`
         }
     }
     margin-bottom: 16px;
+
+    @media (max-width: 544px) {
+      width: 50%;
+  }
 `
 

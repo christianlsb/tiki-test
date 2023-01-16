@@ -9,8 +9,7 @@ import * as yup from "yup";
 export function Form() {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmitForm = (e) => {
-    e.preventDefault();
+  const handleSubmitForm = () => {
     if (formState.isValid) {
       setIsSubmitting(true);
       setTimeout(() => {
@@ -38,17 +37,11 @@ export function Form() {
       <S.ContainerForm>
         <S.TitleForm>CADASTRE-SE E FIQUE POR DENTRO DAS NOVIDADES</S.TitleForm>
         <form onSubmit={handleSubmit(onSubmit)}>
-          <Input
-            type={"text"}
-            placeholder={"Nome"}
-            {...register("name")}
-            error={formState.name?.message}
-          />
+          <Input type={"text"} placeholder={"Nome"} {...register("name")} />
           <Input
             type={"email"}
             placeholder={"meuemail@gmail.com"}
             {...register("email")}
-            error={formState.email?.message}
           />
           <S.ContainerTermPrivacy>
             <InputRadio />

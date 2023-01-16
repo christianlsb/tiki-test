@@ -1,4 +1,3 @@
-import { type } from "@testing-library/user-event/dist/type";
 import styled from "styled-components";
 import { themes } from "../../styles/theme";
 
@@ -19,6 +18,12 @@ export const ContainerForm = styled.div`
     flex-direction: column;
     text-align: center;
   }
+
+  @media (max-width: 544px) {
+      width: 80%;
+  }
+  
+  
 `;
 
 export const TitleForm = styled.h3`
@@ -50,7 +55,6 @@ export const LabelForm = styled.label`
   font-size: ${themes.fontSize.xs};
 `;
 
-export const Loading = styled.p``;
 
 export const Button = styled.button`
   width: 425px;
@@ -66,6 +70,7 @@ export const Button = styled.button`
   box-shadow: 3px 5px 0px ${themes.colors.pink_500};
   background-color: ${themes.colors.white};
   margin-top: 15px;
+  
 `;
 
 export const ErrorMenssage = styled.p`

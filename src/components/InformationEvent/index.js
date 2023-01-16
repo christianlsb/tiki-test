@@ -22,13 +22,12 @@ export function InformationEvent() {
   const [image, setImage] = useState("img1");
 
   const handleImage = (newImagem) => setImage(newImagem);
-
   return (
     <>
       <S.Container>
         <S.Title>CUIDADO, AO ROLAR PODE CONTER...</S.Title>
-        <CrossYellow/>
-        <LazyLoadImage src={SpoilersImg} alt="spoiler" />
+        <CrossYellow />
+        <S.Spoilers src={SpoilersImg} alt="spoiler" />
         <LazyLoadImage src={ArrowDownImg} alt="arrow-down" />
         <S.Text>VOCÊ JÁ ESTAVA SABENDO?</S.Text>
         <S.MainEvent>
@@ -59,7 +58,7 @@ export function InformationEvent() {
               19 DE MARÇO
             </CardEvent>
           </Carousel>
-        </S.WrapperCards> 
+        </S.WrapperCards>
       </S.Container>
     </>
   );

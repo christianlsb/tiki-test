@@ -2,6 +2,7 @@ import styled from "styled-components";
 import {themes} from "../../styles/theme"
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
+
 export const Container = styled.div`
     display: flex;
     width: 1088px;
@@ -16,7 +17,6 @@ export const Container = styled.div`
     @media  (max-width: 1096px) { 
       width: 80%;
   }
-
 `;
 
 export const Title = styled.h2`
@@ -26,9 +26,11 @@ export const Title = styled.h2`
   color: ${themes.colors.background};
   margin-top: 89px;
   margin-bottom: 30px;
-  @media  (max-width: 1096px) { 
+  @media (max-width: 1096px) { 
       width: 70%;
+      text-align: center;
   }
+  
 `;
 
 export const Text = styled.p`
@@ -48,8 +50,8 @@ export const MainEvent = styled.main`
   background-size: cover;
   border-radius: 40px;
   @media  (max-width: 1096px) { 
-      width: 70%;
-      height: 30%
+    width: 88%;
+    height: 293px;
   }
 `;
 
@@ -57,7 +59,8 @@ export const ImgEvent = styled(LazyLoadImage)`
   width: 900px;
   height: 471px;
   @media  (max-width: 1096px) { 
-      width: 100%;
+      width: 70%;
+      height: 300px
   }
 `;
 
@@ -77,3 +80,8 @@ export const WrapperCards = styled.div`
       width: 100%;
   }
 `;
+
+
+export const Spoilers = styled.img`
+     width: 60%;
+`
