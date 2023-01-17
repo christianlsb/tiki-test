@@ -1,8 +1,4 @@
-import {
-  Container,
-} from "./styles/home";
-
-
+import * as S from "./styles/home";
 
 import {InformationEvent} from "./components/InformationEvent";
 import { Header } from "./components/Header";
@@ -14,14 +10,14 @@ import { WantToBePart} from "./components/WantToBePart";
 function App() {
   return (
     <>
-      <Container>
+      <S.Container>
         <Header/>
         <InformationEvent/>
         <WantToBePart/>
         <CrossYellow/>
         <Form/>
         <Footer/>
-      </Container>  
+      </S.Container>  
     </>
   );
 }

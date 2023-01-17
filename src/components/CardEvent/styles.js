@@ -45,7 +45,6 @@ export const DateCard = styled.p`
   margin-top: 10px;
 `;
 
-
 export const PadLock = styled(LazyLoadImage)`
     width: 20px;
     height: 20px;
