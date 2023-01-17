@@ -1,4 +1,4 @@
-import { TikiLogo } from "./styles";
+import * as S from "./styles";
 import Logo from "../../assets/svg/logo.svg";
 
-export const Header = () => <TikiLogo src={Logo} />;
+export const Header = () => <S.TikiLogo src={Logo} />;

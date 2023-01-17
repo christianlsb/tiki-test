@@ -9,6 +9,9 @@ export const ContainerCard = styled.div`
   height: 150px;
   justify-content: center;
   align-items: center;
+  @media(max-width: 768px){
+    width: 80%;
+  }  
 `;
 
 export const Card = styled.div`
@@ -30,6 +33,9 @@ export const Card = styled.div`
   }
   background: ${(props) => `url(${props.background})`};
   background-size: cover;
+  @media(max-width: 768px){
+    width: 80%;
+  }
 `;
 
 export const DateCard = styled.p`

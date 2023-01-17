@@ -38,6 +38,9 @@ export const Text = styled.p`
   font-size: ${themes.fontSize.lg};
   line-height: 80px;
   color: ${themes.colors.white};
+  @media (max-width: 546px) {
+      text-align: center;
+  }
 `;
 
 export const MainEvent = styled.main`
@@ -53,6 +56,11 @@ export const MainEvent = styled.main`
     width: 88%;
     height: 293px;
   }
+
+  @media(max-width: 768px){
+    width: 100%;
+    height: 200px
+  }
 `;
 
 export const ImgEvent = styled(LazyLoadImage)`
@@ -61,6 +69,9 @@ export const ImgEvent = styled(LazyLoadImage)`
   @media  (max-width: 1096px) { 
       width: 70%;
       height: 300px
+  }
+  @media(max-width: 768px){
+    height: 200px
   }
 `;
 
@@ -82,6 +93,8 @@ export const WrapperCards = styled.div`
 `;
 
 
-export const Spoilers = styled.img`
+export const Spoilers = styled(LazyLoadImage)`
      width: 60%;
 `
+
+

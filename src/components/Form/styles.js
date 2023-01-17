@@ -32,6 +32,9 @@ export const TitleForm = styled.h3`
   font-size: ${themes.fontSize.lg};
   text-align: center;
   margin: 80px 0 44px 0;
+  @media (max-width: 544px) {
+      width: 50%;
+  }
 `;
 
 export const ContainerTermPrivacy = styled.div`
@@ -53,6 +56,9 @@ export const LabelForm = styled.label`
   color: ${themes.colors.white};
   font-weight: ${themes.fontWeight.normal};
   font-size: ${themes.fontSize.xs};
+  @media (max-width: 546px) {
+      text-align: center;
+  }
 `;
 
 
@@ -70,12 +76,10 @@ export const Button = styled.button`
   box-shadow: 3px 5px 0px ${themes.colors.pink_500};
   background-color: ${themes.colors.white};
   margin-top: 15px;
+
+  @media (max-width: 544px) {
+      width: 50%;
+  }
   
 `;
 
-export const ErrorMenssage = styled.p`
-  color: ${themes.colors.red_900};
-  font-size: ${themes.fontSize.lg};
-  font-weight: ${themes.fontWeight.bold};
-  margin: 5px 0 15px 0;
-`
