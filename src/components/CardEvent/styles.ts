@@ -2,6 +2,11 @@ import styled from "styled-components";
 import { themes } from "../../styles/theme";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
+
+interface CardProps {
+  background: string;
+}
+
 export const ContainerCard = styled.div`
   display: flex;
   flex-direction: column;
@@ -14,7 +19,7 @@ export const ContainerCard = styled.div`
   }  
 `;
 
-export const Card = styled.div`
+export const Card = styled.div<CardProps>`
   display: flex;
   align-items: center;
   justify-content: center;

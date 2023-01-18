@@ -5,6 +5,7 @@ import App from "./App";
 import GlobalStyle from "./styles/globalStyle";
 import {themes} from "./styles/theme"
 
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
