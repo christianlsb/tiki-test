@@ -2,7 +2,6 @@ import styled from "styled-components";
 import {themes} from "../../styles/theme"
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
-
 export const Container = styled.div`
     display: flex;
     width: 1088px;

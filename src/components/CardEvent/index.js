@@ -1,12 +1,7 @@
 import * as S from "./styles";
 import React from "react";
 
-interface CardEventState {
-  handleImage: any;
-  backgroundImage: string;
-  children: React.ReactNode;
-  padLock: string;
-}
+
 
 export function CardEvent(
   {
@@ -14,7 +9,7 @@ export function CardEvent(
   backgroundImage,
   children,
   padLock,
-}: CardEventState) {
+}) {
   return (
     <>
       <S.ContainerCard>
