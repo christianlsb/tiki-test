@@ -6,11 +6,11 @@ import { CardEvent } from "../CardEvent";
 import { CrossYellow } from "../CrossYellow";
 
 import Carousel from "react-elastic-carousel";
-import SpoilersImg from "../../assets/svg/tittle1.svg";
-import ArrowDownImg from "../../assets/svg/arrow down.svg";
+import SpoilersImg from "../../assets/SVG/tittle1.svg";
+import ArrowDownImg from "../../assets/SVG/arrow down.svg";
 import EventImg from "../../assets/image/imagem.jpg";
 import EventImg2 from "../../assets/image/imagem2.jpg";
-import PadlockImg from "../../assets/svg/lock.svg";
+import PadlockImg from "../../assets/SVG/lock.svg";
 
 export function InformationEvent() {
   const images = {

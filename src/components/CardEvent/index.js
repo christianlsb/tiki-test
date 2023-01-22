@@ -14,7 +14,7 @@ export function CardEvent(
     <>
       <S.ContainerCard>
         <S.Card onClick={handleImage} background={backgroundImage}>
-          {padLock && <S.PadLock src={`${require("../../assets/svg/lock.svg").default}`}/>}
+          {padLock && <S.PadLock src={`${require("../../assets/SVG/lock.svg").default}`}/>}
         </S.Card>
         <S.DateCard>{children}</S.DateCard>
       </S.ContainerCard>
