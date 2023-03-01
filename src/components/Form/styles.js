@@ -1,5 +1,6 @@
-import styled from "styled-components";
-import { themes } from "../../styles/theme";
+import styled from 'styled-components';
+
+import { themes } from '../../styles/theme';
 
 export const ContainerForm = styled.div`
   width: 535px;
@@ -20,10 +21,8 @@ export const ContainerForm = styled.div`
   }
 
   @media (max-width: 544px) {
-      width: 80%;
+    width: 80%;
   }
-  
-  
 `;
 
 export const TitleForm = styled.h3`
@@ -33,7 +32,7 @@ export const TitleForm = styled.h3`
   text-align: center;
   margin: 80px 0 44px 0;
   @media (max-width: 544px) {
-      width: 50%;
+    width: 50%;
   }
 `;
 
@@ -57,10 +56,9 @@ export const LabelForm = styled.label`
   font-weight: ${themes.fontWeight.normal};
   font-size: ${themes.fontSize.xs};
   @media (max-width: 546px) {
-      text-align: center;
+    text-align: center;
   }
 `;
-
 
 export const Button = styled.button`
   width: 425px;
@@ -69,7 +67,7 @@ export const Button = styled.button`
   cursor: pointer;
   box-shadow: 1px solid ${themes.colors.pink_500};
   background-color: ${themes.colors.white};
-  font-size: ${themes.fontSize["2xl"]};
+  font-size: ${themes.fontSize['2xl']};
   font-weight: ${themes.fontWeight.bold};
   color: ${themes.colors.background};
   border: none;
@@ -78,8 +76,6 @@ export const Button = styled.button`
   margin-top: 15px;
 
   @media (max-width: 544px) {
-      width: 50%;
+    width: 50%;
   }
-  
 `;
-

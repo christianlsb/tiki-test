@@ -1,5 +1,8 @@
-import * as S from "./styles";
-   
-import WantToBePartImage from "../../assets/SVG/WantToBePart.svg"
+import React from 'react';
 
-export const WantToBePart = () => <S.WantToBePartStyled src={WantToBePartImage}/>
+import WantToBePartImage from '../../assets/SVG/WantToBePart.svg';
+import * as S from './styles';
+
+export const WantToBePart = () => (
+  <S.WantToBePartStyled src={WantToBePartImage} />
+);

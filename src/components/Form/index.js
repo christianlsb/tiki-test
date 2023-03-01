@@ -1,10 +1,11 @@
-import * as S from "./styles";
-import { Input } from "./Input/styles";
-import { InputRadio } from "./InputRadio";
-import { useState } from "react";
-import { useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
+import { yupResolver } from '@hookform/resolvers/yup';
+import React, { useState } from 'react';
+import { useForm } from 'react-hook-form';
+import * as yup from 'yup';
+
+import { Input } from './Input/styles';
+import { InputRadio } from './InputRadio';
+import * as S from './styles';
 
 export function Form() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -30,18 +31,18 @@ export function Form() {
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = data => console.log(data);
 
   return (
     <>
       <S.ContainerForm>
         <S.TitleForm>CADASTRE-SE E FIQUE POR DENTRO DAS NOVIDADES</S.TitleForm>
         <form onSubmit={handleSubmit(onSubmit)}>
-          <Input type={"text"} placeholder={"Nome"} {...register("name")} />
+          <Input type={'text'} placeholder={'Nome'} {...register('name')} />
           <Input
-            type={"email"}
-            placeholder={"meuemail@gmail.com"}
-            {...register("email")}
+            type={'email'}
+            placeholder={'meuemail@gmail.com'}
+            {...register('email')}
           />
           <S.ContainerTermPrivacy>
             <InputRadio />
@@ -50,7 +51,7 @@ export function Form() {
             </S.LabelForm>
           </S.ContainerTermPrivacy>
           <S.Button type="submit" onClick={handleSubmitForm}>
-            {isSubmitting ? "Loading..." : "Enviar"}
+            {isSubmitting ? 'Loading... =)' : 'Enviar'}
           </S.Button>
         </form>
       </S.ContainerForm>

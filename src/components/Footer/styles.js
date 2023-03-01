@@ -1,15 +1,16 @@
-import styled from "styled-components";
-import { themes } from "../../styles/theme";
+import styled from 'styled-components';
+
+import { themes } from '../../styles/theme';
 
 export const MainFooter = styled.footer`
   display: flex;
   flex-direction: column;
-`
+`;
 
 export const TitleFooter = styled.h3`
   color: ${themes.colors.white};
   font-weight: ${themes.fontWeight.bold};
-  font-size: ${themes.fontSize["4xl"]};
+  font-size: ${themes.fontSize['4xl']};
   text-align: center;
 `;
 
@@ -21,7 +22,7 @@ export const TextFooter = styled.p`
   font-size: ${themes.fontSize.xs};
   text-align: center;
 
-  @media  (max-width: 1096px) { 
-      width: 100%;
+  @media (max-width: 1096px) {
+    width: 100%;
   }
 `;
