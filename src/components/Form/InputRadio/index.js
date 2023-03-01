@@ -1,9 +1,11 @@
-import * as S from "./styles";
+import React from 'react';
+
+import * as S from './styles';
 
 export function InputRadio() {
   return (
     <>
-      <S.InputRadio type="radio"/>
+      <S.InputRadio type="radio" />
     </>
   );
 }

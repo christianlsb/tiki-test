@@ -1,9 +1,7 @@
-import styled from "styled-components";
-import { themes } from "../../styles/theme";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import styled from 'styled-components';
 
-
-
+import { themes } from '../../styles/theme';
 
 export const ContainerCard = styled.div`
   display: flex;
@@ -12,9 +10,9 @@ export const ContainerCard = styled.div`
   height: 150px;
   justify-content: center;
   align-items: center;
-  @media(max-width: 768px){
+  @media (max-width: 768px) {
     width: 80%;
-  }  
+  }
 `;
 
 export const Card = styled.div`
@@ -34,9 +32,9 @@ export const Card = styled.div`
     -webkit-transform: scale(1.5);
     transform: scale(1.1);
   }
-  background: ${(props) => `url(${props.background})`};
+  background: ${props => `url(${props.background})`};
   background-size: cover;
-  @media(max-width: 768px){
+  @media (max-width: 768px) {
     width: 80%;
   }
 `;
@@ -49,6 +47,6 @@ export const DateCard = styled.p`
 `;
 
 export const PadLock = styled(LazyLoadImage)`
-    width: 20px;
-    height: 20px;
-`
+  width: 20px;
+  height: 20px;
+`;

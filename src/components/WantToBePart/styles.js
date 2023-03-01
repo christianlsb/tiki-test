@@ -1,5 +1,5 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const WantToBePartStyled = styled.img`
-    width: 60%;
-`
+  width: 60%;
+`;
