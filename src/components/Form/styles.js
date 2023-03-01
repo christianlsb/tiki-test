@@ -79,3 +79,33 @@ export const Button = styled.button`
     width: 50%;
   }
 `;
+
+export const Input = styled.input`
+  width: 430px;
+  height: 70px;
+  border: ${props =>
+    props.error ? '1px solid #CC1717;' : `1px solid ${themes.colors.white};`};
+  background-color: ${themes.colors.background};
+  border-radius: 35px;
+  font-size: ${themes.fontSize.sm};
+  outline: none;
+  padding-left: 27px;
+  color: ${themes.colors.white};
+  &:focus {
+    border: 1px solid ${themes.colors.pink_500};
+    color: ${themes.colors.pink_500};
+    ::-webkit-input-placeholder {
+      color: ${themes.colors.pink_500};
+    }
+  }
+  margin-bottom: 16px;
+
+  @media (max-width: 544px) {
+    width: 50%;
+  }
+`;
+export const ErrorMassage = styled.p`
+  color: #cc1717;
+  font-size: 14px;
+  margin-bottom: 5px;
+`;
