@@ -2,10 +2,10 @@ import React from 'react';
 
 import * as S from './styles';
 
-export function InputRadio() {
+export function CheackBox() {
   return (
     <>
-      <S.InputRadio type="radio" />
+      <S.InputCheackBox type={'checkbox'} />
     </>
   );
 }

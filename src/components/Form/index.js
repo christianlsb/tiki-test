@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
 
-import { InputRadio } from './InputRadio';
+import { CheackBox } from './InputCheackbox';
 import * as S from './styles';
 
 export function Form() {
@@ -63,7 +63,7 @@ export function Form() {
             error={errors.email?.message}
           />
           <S.ContainerTermPrivacy>
-            <InputRadio />
+            <CheackBox />
             <S.LabelForm>
               Declaro que li e aceito a política de privacidade
             </S.LabelForm>
